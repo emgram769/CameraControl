@@ -19,6 +19,14 @@
 		EB6F44101771305700E587F9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB6F43F81771305700E587F9 /* UIKit.framework */; };
 		EB6F44181771305700E587F9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EB6F44161771305700E587F9 /* InfoPlist.strings */; };
 		EB6F441A1771305700E587F9 /* CameraControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6F44191771305700E587F9 /* CameraControlTests.m */; };
+		EB6F4426177130C900E587F9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6F4424177130C900E587F9 /* ViewController.m */; };
+		EB6F4427177130C900E587F9 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB6F4425177130C900E587F9 /* ViewController.xib */; };
+		EB6F44321771312200E587F9 /* libGPUImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB6F442F1771310B00E587F9 /* libGPUImage.a */; };
+		EB6F4437177131C200E587F9 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB6F4435177131C200E587F9 /* CoreMedia.framework */; };
+		EB6F4438177131C200E587F9 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB6F4436177131C200E587F9 /* CoreVideo.framework */; };
+		EB6F443A177131DD00E587F9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB6F4439177131DD00E587F9 /* QuartzCore.framework */; };
+		EB6F443C177131E400E587F9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB6F443B177131E400E587F9 /* AVFoundation.framework */; };
+		EB6F443E177131ED00E587F9 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB6F443D177131ED00E587F9 /* OpenGLES.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +36,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = EB6F43F01771305700E587F9;
 			remoteInfo = CameraControl;
+		};
+		EB6F442E1771310B00E587F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB6F44281771310A00E587F9 /* GPUImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BCF1A33414DDB1EC00852800;
+			remoteInfo = GPUImage;
+		};
+		EB6F44301771310B00E587F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB6F44281771310A00E587F9 /* GPUImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BCF1A34414DDB1EC00852800;
+			remoteInfo = GPUImageTests;
+		};
+		EB6F44331771312C00E587F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB6F44281771310A00E587F9 /* GPUImage.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BCF1A33314DDB1EC00852800;
+			remoteInfo = GPUImage;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -48,6 +77,15 @@
 		EB6F44151771305700E587F9 /* CameraControlTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CameraControlTests-Info.plist"; sourceTree = "<group>"; };
 		EB6F44171771305700E587F9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EB6F44191771305700E587F9 /* CameraControlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraControlTests.m; sourceTree = "<group>"; };
+		EB6F4423177130C900E587F9 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../ViewController.h; sourceTree = "<group>"; };
+		EB6F4424177130C900E587F9 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../ViewController.m; sourceTree = "<group>"; };
+		EB6F4425177130C900E587F9 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ViewController.xib; path = ../ViewController.xib; sourceTree = "<group>"; };
+		EB6F44281771310A00E587F9 /* GPUImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GPUImage.xcodeproj; path = ../../Frameworks/GPUImage/framework/GPUImage.xcodeproj; sourceTree = "<group>"; };
+		EB6F4435177131C200E587F9 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		EB6F4436177131C200E587F9 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		EB6F4439177131DD00E587F9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		EB6F443B177131E400E587F9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		EB6F443D177131ED00E587F9 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +93,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB6F443E177131ED00E587F9 /* OpenGLES.framework in Frameworks */,
+				EB6F443C177131E400E587F9 /* AVFoundation.framework in Frameworks */,
+				EB6F443A177131DD00E587F9 /* QuartzCore.framework in Frameworks */,
+				EB6F4437177131C200E587F9 /* CoreMedia.framework in Frameworks */,
+				EB6F4438177131C200E587F9 /* CoreVideo.framework in Frameworks */,
+				EB6F44321771312200E587F9 /* libGPUImage.a in Frameworks */,
 				EB6F43F71771305700E587F9 /* CoreGraphics.framework in Frameworks */,
 				EB6F43F91771305700E587F9 /* UIKit.framework in Frameworks */,
 				EB6F43F51771305700E587F9 /* Foundation.framework in Frameworks */,
@@ -96,6 +140,12 @@
 		EB6F43F31771305700E587F9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EB6F443D177131ED00E587F9 /* OpenGLES.framework */,
+				EB6F443B177131E400E587F9 /* AVFoundation.framework */,
+				EB6F4439177131DD00E587F9 /* QuartzCore.framework */,
+				EB6F4435177131C200E587F9 /* CoreMedia.framework */,
+				EB6F4436177131C200E587F9 /* CoreVideo.framework */,
+				EB6F44281771310A00E587F9 /* GPUImage.xcodeproj */,
 				EB6F43F41771305700E587F9 /* Foundation.framework */,
 				EB6F43F61771305700E587F9 /* CoreGraphics.framework */,
 				EB6F43F81771305700E587F9 /* UIKit.framework */,
@@ -107,6 +157,9 @@
 		EB6F43FA1771305700E587F9 /* CameraControl */ = {
 			isa = PBXGroup;
 			children = (
+				EB6F4423177130C900E587F9 /* ViewController.h */,
+				EB6F4424177130C900E587F9 /* ViewController.m */,
+				EB6F4425177130C900E587F9 /* ViewController.xib */,
 				EB6F44031771305700E587F9 /* AppDelegate.h */,
 				EB6F44041771305700E587F9 /* AppDelegate.m */,
 				EB6F44061771305700E587F9 /* Images.xcassets */,
@@ -144,6 +197,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		EB6F44291771310A00E587F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB6F442F1771310B00E587F9 /* libGPUImage.a */,
+				EB6F44311771310B00E587F9 /* GPUImageTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -158,6 +220,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				EB6F44341771312C00E587F9 /* PBXTargetDependency */,
 			);
 			name = CameraControl;
 			productName = CameraControl;
@@ -206,6 +269,12 @@
 			mainGroup = EB6F43E81771305700E587F9;
 			productRefGroup = EB6F43F21771305700E587F9 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = EB6F44291771310A00E587F9 /* Products */;
+					ProjectRef = EB6F44281771310A00E587F9 /* GPUImage.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				EB6F43F01771305700E587F9 /* CameraControl */,
@@ -214,12 +283,30 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		EB6F442F1771310B00E587F9 /* libGPUImage.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libGPUImage.a;
+			remoteRef = EB6F442E1771310B00E587F9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EB6F44311771310B00E587F9 /* GPUImageTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GPUImageTests.octest;
+			remoteRef = EB6F44301771310B00E587F9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		EB6F43EF1771305700E587F9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EB6F43FF1771305700E587F9 /* InfoPlist.strings in Resources */,
+				EB6F4427177130C900E587F9 /* ViewController.xib in Resources */,
 				EB6F44071771305700E587F9 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,6 +326,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB6F4426177130C900E587F9 /* ViewController.m in Sources */,
 				EB6F44051771305700E587F9 /* AppDelegate.m in Sources */,
 				EB6F44011771305700E587F9 /* main.m in Sources */,
 			);
@@ -259,6 +347,11 @@
 			isa = PBXTargetDependency;
 			target = EB6F43F01771305700E587F9 /* CameraControl */;
 			targetProxy = EB6F44111771305700E587F9 /* PBXContainerItemProxy */;
+		};
+		EB6F44341771312C00E587F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GPUImage;
+			targetProxy = EB6F44331771312C00E587F9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -359,6 +452,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CameraControl/CameraControl-Prefix.pch";
+				HEADER_SEARCH_PATHS = "/Users/bwasti/Documents/Code/ObjectiveC/Frameworks/GPUImage/framework/**";
 				INFOPLIST_FILE = "CameraControl/CameraControl-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -372,6 +466,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CameraControl/CameraControl-Prefix.pch";
+				HEADER_SEARCH_PATHS = "/Users/bwasti/Documents/Code/ObjectiveC/Frameworks/GPUImage/framework/**";
 				INFOPLIST_FILE = "CameraControl/CameraControl-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
